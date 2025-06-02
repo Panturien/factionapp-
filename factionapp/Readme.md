@@ -1,4 +1,5 @@
-Installation
+# Installation
+
 1.Install the sql
 
 2.Please add this to the LB-Phone config.
