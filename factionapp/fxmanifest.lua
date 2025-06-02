@@ -1,4 +1,4 @@
-shared_script '@WaveShield/resource/waveshield.lua' --this line was automatically written by WaveShield
+
 
 
 
