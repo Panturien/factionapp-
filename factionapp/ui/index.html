@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Custom App Template</title>
+        <link rel="stylesheet" href="fonts/css/app.css" />
+        <script>
+            const resourceName = "factionapp";
+        </script>
+    </head>
+
+    <style>
+        
+        @font-face {
+            font-family: "webfont";
+            src: url("./fonts/SFPRODISPLAYREGULAR.OTF");
+        }
+
+        @font-face {
+            font-family: "webfont";
+            src: url("./fonts/SFPRODISPLAYHEAVYITALIC.OTF");
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: "webfont";
+            src: url("./fonts/SFPRODISPLAYBOLD.OTF");
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: "webfont";
+            src: url("./fonts/SFPRODISPLAYMEDIUM.OTF");
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: "webfont";
+            src: url("./fonts/SFPRODISPLAYREGULAR.OTF");
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: "webfont";
+            src: url("./fonts/SFPRODISPLAYREGULAR.OTF");
+            font-weight: 400;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+            visibility: hidden;
+        }
+
+        .app {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            background-image: url(../ui/assets/wallpaper.png);
+            background-size: 130%;
+            background-repeat: no-repeat;
+        }
+
+        button {
+            width: 10rem;
+            height: 4rem;
+            background-color: green;
+
+            cursor: pointer;
+        }
+
+        /* Do not edit, this allows you to view changes easily in your browser */
+        #phone-wrapper {
+            /* display: none; */
+
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
+
+    <body>
+        <div id="phone-wrapper">
+            <div class="app">
+                <div class="phone">
+                    <div class="faction_app" id="faction_app">
+                        <main id="main">
+                            <nav>
+                                <!-- <img src="icons/arrow.svg" onclick="openFunk()"/> -->
+                                <img src="icons/setting.svg" onclick="openNotes()"/>
+                                <!-- <img src="icons/funk.svg" onclick="openDispatches()"/> -->
+                                <span>Fraktion</span>
+                            </nav>
+                
+                            <div class="items">
+                                <div class="item">
+                                    <div class="content">
+                                        <div class="circle"></div>
+                                        <div class="icon">
+                                            <img src="icons/job.svg"/>
+                                        </div>
+                                        <div class="infos">
+                                            <span>Job</span>
+                                            <span id="jobname">Arbeitslos</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <div class="circle"></div>
+                                        <div class="icon">
+                                            <img src="icons/user.svg"/>
+                                        </div>
+                                        <div class="infos">
+                                            <span>Online Mitglieder</span>
+                                            <span id="jobcount">353</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="midstroke"></div>
+                
+                            <div class="notes">
+                                <span id="activenotestitle">MOTD</span>
+                                <p id="activenotes">Here is a placeholder for the notes...</p>
+                            </div>
+                
+                            <div class="online">
+                                <div class="items" id="flexplayer">
+                                    <div class="player" data-id="5">
+                                        <div class="circle active"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                    <div class="player">
+                                        <div class="circle active"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                    <div class="player">
+                                        <div class="circle active"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                    <div class="player">
+                                        <div class="circle active"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                    <div class="player">
+                                        <div class="circle"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                    <div class="player">
+                                        <div class="circle"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                    <div class="player">
+                                        <div class="circle active"></div>
+                                        <span>John Laperto (29) (Boss)</span>
+                                        <img src="icons/call.svg"/>
+                                        <img src="icons/text.svg"/>
+                                        <img src="icons/setting.svg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                
+                        <main id="note">
+                            <nav>
+                                <img src="icons/arrow.svg" onclick="getBack()"/>
+                                <!-- <img src="icons/setting.svg" onclick="openNotes()"/> -->
+                                <span>Einstellungen</span>
+                            </nav>
+                
+                            <div class="notes" id="notes">
+                                <span>MOTD erstellen</span>
+                                <textarea id="createnotes" placeholder="blablabla..."></textarea>
+                            </div>
+                
+                            <div class="settingbtn" onclick="saveNotes()" id="notebtn">MOTD speichern</div>
+                            <!-- <div class="settingbtn">take control center</div> -->
+                        </main>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <script src="https://cfx-nui-lb-phone/ui/components.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="dev.js"></script> -->
+        <script src="script.js"></script>
+        <script> 
+    $(window).scroll(function() {
+        $(this).scrollTop(0);
+    });
+
+    $("#funk_app, #faction_app, #dispatches, #activedispatches, #note, #frakbank").hide();
+    $("#faction_app").fadeIn(300);
+    function fadeOutElements() {
+        $("#funk_app, #main, #note, #frakbank, #dispatches, #activedispatches").fadeOut(200);
+    }
+
+    function openDispatches() {
+        fadeOutElements();
+        $("#dispatches").fadeIn(200);
+    }
+
+    function openActiveDispatches() {
+        fadeOutElements();
+        $("#activedispatches").fadeIn(200);
+    }
+
+    function getBack() {
+        fadeOutElements();
+        $("#main").fadeIn(200);
+    }
+
+    function openFunk() {
+        fadeOutElements();
+        $("#funk_app").fadeIn(200);
+    }
+
+    function openNotes() {
+        fadeOutElements();
+        $("#note").fadeIn(500);
+    }
+
+    // function openFrakBanking() {
+    //     fadeOutElements();
+    //     $("#frakbank").fadeIn(200);
+    // }
+
+    $("#notebtn").click(function() {
+        $("#activenotes").text($("#createnotes").val());
+    });
+    </script>
+</body>
+
+</html>

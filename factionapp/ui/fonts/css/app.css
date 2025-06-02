@@ -1,0 +1,923 @@
+:root {
+
+    /* ui  */
+    /* --scaleui : scale(100%); Wenn der Wert größer als 100 Prozent ist, verlieren die Objekte langsam an klarheit und werden unscharf. */
+    --phonne_left_position: 5.333vw;
+    --phonne_top_position: 8vw;
+    
+    /* btn */
+    --main_btn_color: rgba(76, 76, 76, 0.05);
+    --main_hover_btn_color: rgba(255, 255, 255, 0.23);
+    
+    --main_border_color: rgba(255, 255, 255, 0.05);
+    --main_scroll_color: #FFFFFF;
+    
+    /* font colors */
+    --main_white_color: #FFFFFF;
+    --second_color: #cfcfcf;
+    --third_color: #CBCBCB;
+    --darkmode_color: #46A2FF;
+    
+    /* statics */
+    --freq_inactive_color: #FF0000;
+    --main_inactive_color: #b8b8b8;
+    --main_active_color: #00ff4c;
+}
+
+body::-webkit-scrollbar {
+	display: none 
+}
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none 
+}
+input[type=number] {
+	-moz-appearance: textfield 
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0 
+}
+::-webkit-scrollbar {
+	width: 0.700vw;
+	background: var(--main_border_color) 
+}
+::-webkit-scrollbar-thumb {
+	background: var(--main_scroll_color);
+}
+.phone {
+	position: absolute;
+    width: 99.835vw;
+    height: 213.344vw;
+	right: var(--phonne_left_position);
+	bottom: var(--phonne_top_position);
+	/* transform: var(--scaleui)  */
+}
+.phone .phonewallpaper {
+	position: absolute;
+	width: 100.835vw;
+	height: 211.344vw;
+	top: 3.500vw;
+	left: 3.500vw;
+	border-radius: 14.000vw;
+	transition: 2s;
+}
+.phone .phonestatic {
+	position: absolute;
+	width: 107.835vw;
+	height: 218.344vw 
+}
+.phone header {
+	position: absolute;
+	width: 77.469vw;
+	height: 6.125vw;
+	left: 15.778vw;
+	top: 9.821vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0;
+	gap: 0.742vw 
+}
+.phone header span {
+	position: relative;
+	width: 59.500vw;
+	height: 5.509vw;
+	left: 0;
+	top: 0;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.683vw;
+	line-height: 6.195vw;
+	text-align: left;
+	color: var(--main_white_color);
+	flex: none;
+	order: 0;
+	flex-grow: 1 
+}
+.phone header img {
+	width: 6.125vw;
+	height: 6.125vw;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.phone header img:nth-child(2) {
+	width: 6.125vw;
+	height: 6.125vw;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+.phone header img:nth-child(3) {
+	width: 6.125vw;
+	height: 6.125vw;
+	flex: none;
+	order: 3;
+	flex-grow: 0;
+}
+.phone main nav {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80.374vw;
+	height: 6.356vw;
+	left: 13.769vw;
+	top: 21.000vw 
+}
+.phone main nav span {
+	position: relative;
+	width: 50.000%;
+	height: 4.375vw;
+	left: 0;
+	top: 1.400vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 5.950vw;
+	line-height: 4.011vw;
+	text-align: center;
+	color: var(--main_white_color) 
+}
+.phone main nav img:nth-child(1) {
+	position: absolute;
+	width: 4.291vw;
+	height: 6.356vw;
+	left: 0;
+	top: 1.050vw 
+}
+.phone main nav img:nth-child(2) {
+	position: absolute;
+	width: 5.075vw;
+	height: 5.075vw;
+	right: 0;
+	top: 1.960vw 
+}
+.phone main nav img:nth-child(3) {
+	position: absolute;
+	width: 6.643vw;
+	height: 5.236vw;
+	right: 9.100vw;
+	top: 1.960vw 
+}
+.phone main .items {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 3.647vw;
+	width: 85.092vw;
+	height: 78.064vw;
+	left: 11.312vw;
+	top: 35.721vw 
+}
+.phone main .items .item {
+	position: relative;
+	width: 85.092vw;
+	height: 16.877vw;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.841vw;
+	gap: 1.841vw;
+	box-sizing: border-box;
+	background: var(--main_btn_color);
+	border: 0.217vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.213vw 
+}
+.phone main .items .item .content {
+	width: 81.340vw;
+	height: 13.132vw;
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+.phone main .items .item .content .infos {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0;
+	gap: 0.350vw;
+	position: absolute;
+	width: 53.228vw;
+	height: 9.842vw;
+	left: 15.981vw;
+	top: 2.800vw 
+}
+.phone main .items .item .content .infos span:nth-child(1) {
+	width: 53.228vw;
+	height: 4.739vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4.340vw;
+	line-height: 4.375vw;
+	color: var(--second_color);
+	text-align: left;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.phone main .items .item .content .infos span:nth-child(2) {
+	width: 53.228vw;
+	height: 5.103vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.550vw;
+	line-height: 5.103vw;
+	letter-spacing: 0;
+	text-align: left;
+	color: var(--main_white_color);
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.phone main .items .item .content .circle {
+	position: absolute;
+	width: 3.752vw;
+	height: 3.752vw;
+	right: 7.000vw;
+	top: 6.300vw;
+	background: var(--main_white_color);
+	border-radius: 100.000% 
+}
+.phone main .items .item .content .icon {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 13.132vw;
+	height: 13.132vw;
+	left: 1.400vw;
+	top: 1.225vw 
+}
+.phone main .items .item .content .icon img {
+	position: relative;
+	width: 7.700vw;
+	height: 7.700vw 
+}
+.phone main .dispatchitems {
+	position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	gap: 3.647vw;
+	width: 87.192vw;
+	height: 161.000vw;
+	left: 11.312vw;
+	top: 35.721vw;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.phone main .dispatchitems .item {
+	position: relative;
+	width: 85.092vw;
+	min-height: 16.877vw;
+	max-height: fit-content;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	background: var(--main_btn_color);
+	border: 0.217vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.213vw;
+	transition: 0.2s;
+	padding-top: 2.450vw;
+	padding-bottom: 8.050vw;
+}
+.phone main .dispatchitems .item:hover {
+	background: var(--main_hover_btn_color);
+	transition: 0.2s;
+}
+.phone main .dispatchitems .item .content {
+	width: 78.750vw;
+	height: 13.132vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 3.675vw;
+	gap: 3.675vw;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.phone main .dispatchitems .item .content .infos {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.000vw;
+	gap: 0.350vw;
+	position: relative;
+	width: 35.000vw;
+	height: 9.842vw;
+	left: 0;
+	top: 1.575vw;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+.phone main .dispatchitems .item .content .infos span:nth-child(1) {
+	width: 35.000vw;
+	height: 4.739vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4.340vw;
+	line-height: 4.375vw;
+	color: var(--second_color);
+	text-align: left;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.phone main .dispatchitems .item .content .infos span:nth-child(2) {
+	width: 35.000vw;
+	height: 5.103vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4.200vw;
+	line-height: 5.103vw;
+	letter-spacing: 0;
+	text-align: left;
+	color: var(--main_white_color);
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.phone main .dispatchitems .item .content .circle {
+	width: 2.156vw;
+	height: 2.156vw;
+	left: 0;
+	margin-top: 2.450vw;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	background: var(--main_white_color);
+	border-radius: 100.000% 
+}
+.phone main .dispatchitems .item .content .icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 13.132vw;
+	height: 13.132vw;
+	left: 0;
+	top: 0 
+}
+.phone main .dispatchitems .item .content .icon img {
+	position: relative;
+	top: 1.050vw;
+	width: 7.700vw;
+	height: 7.700vw 
+}
+.phone main .dispatchitems .item .content .action {
+	margin-top: 3.500vw;
+	margin-left: 0.175vw;
+	width: 4.781vw;
+	height: 4.781vw;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+.phone main .midstroke {
+	position: absolute;
+	width: 50.456vw;
+	height: 0.224vw;
+	left: 29.169vw;
+	top: 107.113vw;
+	background: var(--main_white_color) 
+}
+.phone main .notes {
+	position: absolute;
+	width: 85.064vw;
+	min-height: 25.004vw;
+	height: 25.004vw;
+	left: 11.389vw;
+	top: 77.020vw;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 5.467vw 6.930vw;
+	gap: 1.456vw;
+	box-sizing: border-box;
+	background: var(--main_btn_color);
+	border: 0.224vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.283vw 
+}
+.phone #notes {
+	left: 11.389vw;
+	top: 35.721vw 
+}
+.phone main .notes span {
+	width: 70.806vw;
+	height: 4.011vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.466vw;
+	line-height: 3.647vw;
+	color: var(--second_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.phone main .notes p {
+	position: absolute;
+	top: 11.200vw;
+	width: 70.000vw;
+	height: 10.941vw;
+	display: inline-block;
+	overflow: hidden;
+	resize: none;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4.046vw;
+	line-height: 4.550vw;
+	text-align: left;
+	color: var(--second_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	overflow-y: hidden;
+	overflow-x: hidden 
+}
+.phone main .notes textarea {
+	position: absolute;
+	top: 11.200vw;
+	width: 66.353vw;
+	max-width: 66.353vw;
+	height: 10.941vw;
+	display: block;
+	overflow: hidden;
+	resize: none;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4.046vw;
+	line-height: 4.550vw;
+	text-align: left;
+	color: var(--second_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	background-color: transparent;
+	border: none;
+	outline: none 
+}
+.phone main .frakbankstats {
+	position: absolute;
+	width: 85.064vw;
+	height: 24.815vw;
+	left: 11.389vw;
+	top: 35.721vw;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 4.011vw 2.058vw;
+	gap: 3.647vw;
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.598vw 
+}
+.phone main .frakbankstats span {
+	width: 75.831vw;
+	height: 4.375vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.900vw;
+	line-height: 4.011vw;
+	text-align: center;
+	color: var(--second_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.phone main .frakbankstats h1 {
+	width: 75.831vw;
+	height: 6.566vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 5.831vw;
+	line-height: 6.566vw;
+	text-align: center;
+	letter-spacing: 0.014vw;
+	color: var(--main_white_color);
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.phone main .frakbankstats textarea {
+	position: absolute;
+	top: 11.200vw;
+	width: 66.353vw;
+	max-width: 66.353vw;
+	height: 10.941vw;
+	display: block;
+	overflow: hidden;
+	resize: none;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4.046vw;
+	line-height: 4.550vw;
+	text-align: left;
+	color: var(--second_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	background-color: transparent;
+	border: none;
+	outline: none 
+}
+.phone main .frakbtns {
+	position: absolute;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 7.000vw;
+	width: 85.064vw;
+	height: 12.761vw;
+	left: 11.389vw;
+	top: 75.250vw 
+}
+.phone main .frakbtns .frakbtn {
+	position: relative;
+	width: 39.011vw;
+	height: 12.761vw;
+	left: 0;
+	top: 3.500vw;
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.563vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3.857vw;
+	line-height: 12.761vw;
+	text-align: center;
+	color: var(--main_white_color);
+	border-radius: 3.563vw;
+	transition: .2s 
+}
+.phone main .frakbtns .frakbtn:hover {
+	background: var(--main_hover_btn_color);
+	transition: .2s 
+}
+.phone main .frakamount {
+	position: relative;
+	width: 85.064vw;
+	height: 12.761vw;
+	left: 11.389vw;
+	top: 63.000vw;
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.563vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3.857vw;
+	line-height: 12.761vw;
+	text-align: center;
+	color: var(--main_white_color);
+	border-radius: 3.563vw;
+	outline: transparent;
+	transition: .2s 
+}
+.phone main .settingbtn {
+	box-sizing: border-box;
+	position: relative;
+	width: 85.064vw;
+	height: 14.000vw;
+	left: 11.389vw;
+	top: 61.250vw;
+	margin-top: 3.500vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.557vw;
+	line-height: 13.300vw;
+	text-align: center;
+	color: var(--main_white_color);
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.563vw;
+	transition: .2s 
+}
+.phone main .settingbtn:hover {
+	transition: .2s;
+	background: var(--main_hover_btn_color) 
+}
+.phone main .online {
+	position: absolute;
+	width: 85.064vw;
+	height: 97.789vw;
+	left: 11.389vw;
+	top: 112.938vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 2.681vw 3.346vw;
+	gap: 0.896vw;
+	box-sizing: border-box;
+	background: var(--main_btn_color);
+	border: 0.224vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.283vw 
+}
+.phone main .online .items {
+	position: absolute;
+	width: 78.750vw;
+	height: 89.419vw;
+	left: 3.353vw;
+	top: 3.185vw;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	align-items: flex-start;
+	padding: 0.700vw 0;
+	overflow-y: scroll;
+	overflow-x: hidden 
+}
+.phone main .online .items .player {
+	position: relative;
+	width: 74.123vw;
+	height: 4.466vw;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1.757vw 0;
+	gap: 1.757vw 
+}
+.phone main .online .items .player .circle {
+	width: 2.261vw;
+	height: 2.261vw;
+	background: var(--main_inactive_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	border-radius: 100.000% 
+}
+.phone main .online .items .player .circle.active {
+	width: 2.261vw;
+	height: 2.261vw;
+	background: var(--main_active_color);
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	border-radius: 100.000% 
+}
+.phone main .online .items .player span {
+	width: 51.800vw;
+	height: 4.011vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3.759vw;
+	line-height: 3.647vw;
+	color: var(--second_color);
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.phone main .online .items .player img {
+	width: 4.081vw;
+	height: 4.081vw;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+.phone main .dispatches {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 3.647vw;
+	width: 93.380vw;
+	height: 59.227vw;
+	left: 12.495vw;
+	top: 42.140vw 
+}
+.phone main .dispatches .dispatch {
+	position: relative;
+	width: 84.000vw;
+	height: 17.185vw;
+	left: 0;
+	top: 0;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.900vw;
+	line-height: 15.400vw;
+	text-align: center;
+	color: var(--main_white_color);
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.598vw;
+	transition: .2s 
+}
+.phone main .dispatches .dispatch:hover {
+	transition: .2s;
+	background: var(--main_hover_btn_color) 
+}
+.phone main .frequenz {
+	position: absolute;
+	width: 82.033vw;
+	height: 18.228vw;
+	left: 12.397vw;
+	top: 37.555vw;
+}
+.phone main .frequenz span {
+	position: absolute;
+	width: 100.000%;
+	height: 5.103vw;
+	left: 0.000vw;
+	top: 0.000vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3.647vw;
+	line-height: 5.103vw;
+	color: var(--third_color);
+}
+.phone main .frequenz .item {
+	position: absolute;
+	width: 82.033vw;
+	height: 14.000vw;
+	left: 0;
+	top: 6.195vw;
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 1.456vw;
+}
+.phone main .frequenz .item .freqinput {
+	position: absolute;
+	width: 40.103vw;
+	height: 5.103vw;
+	left: 4.739vw;
+	top: 3.850vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.550vw;
+	line-height: 5.103vw;
+	color: var(--third_color);
+	background-color: transparent;
+	outline: transparent;
+	transition: .2s 
+}
+.phone main .frequenz .item span {
+	position: absolute;
+	width: 14.945vw;
+	height: 5.103vw;
+	top: 4.130vw;
+	left: 40.950vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 5.775vw;
+	line-height: 5.103vw;
+	text-align: right;
+	color: var(--third_color);
+}
+.phone main .frequenz .item img {
+	position: absolute;
+	width: 8.512vw;
+	height: 5.838vw;
+	left: 59.500vw;
+	top: 3.920vw;
+}
+.phone main .frequenz .item .circle {
+	position: absolute;
+	width: 2.947vw;
+	height: 2.947vw;
+	right: 6.300vw;
+	top: 5.180vw;
+	background: var(--freq_inactive_color);
+	border-radius: 100.000% 
+}
+.phone main .frequenz .item .circle.active {
+	background: var(--main_active_color);
+}
+.phone main .history {
+	position: absolute;
+	width: 82.033vw;
+	height: 18.228vw;
+	left: 12.397vw;
+	top: 84.000vw;
+}
+.phone main .history span {
+	position: absolute;
+	width: 100.000%;
+	height: 5.103vw;
+	left: 0.000vw;
+	top: 0.000vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3.647vw;
+	line-height: 5.103vw;
+	color: var(--third_color);
+}
+.phone main .history .freqitems {
+	position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	gap: 3.647vw;
+	width: 85.400vw;
+	height: 104.100vw;
+	left: 0;
+	top: 6.195vw;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.phone main .history .freqitems .freqitem {
+	position: relative;
+	width: 82.033vw;
+	height: 14.000vw;
+	left: 0.000vw;
+	top: 0.000vw;
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 1.456vw;
+}
+.phone main .history .freqitems .freqitem span {
+	position: absolute;
+	width: 40.103vw;
+	height: 5.103vw;
+	left: 13.650vw;
+	top: 3.710vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4.550vw;
+	line-height: 5.103vw;
+	text-align: left;
+	color: var(--third_color);
+}
+.phone main .history .freqitems .freqitem img {
+	position: absolute;
+	width: 6.587vw;
+	height: 5.383vw;
+	left: 4.431vw;
+	top: 3.780vw;
+}
+
+.phone main .joinfreq {
+	position: absolute;
+	width: 39.011vw;
+	height: 12.761vw;
+	left: 33.908vw;
+	top: 64.400vw;
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3.857vw;
+	line-height: 12.061vw;
+	text-align: center;
+	color: var(--main_white_color);
+	background: var(--main_btn_color);
+	border: 0.245vw solid var(--main_border_color);
+	background-color: #00000054;
+	border-radius: 3.563vw;
+	transition: .2s;
+}
+.phone main .joinfreq:hover {
+	transition: .2s;
+	color: var(--darkmode_color);
+	background: var(--main_hover_btn_color) 
+}
