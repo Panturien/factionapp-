@@ -13,7 +13,7 @@ This LB-Phone app lets you view your faction, see who's currently online, and ta
 
 # Installation
 
-1. Install the sql
+1.Install the sql
 
 2.Please add this to the LB-Phone config.
 
