@@ -6,7 +6,7 @@ fx_version "cerulean"
 game "gta5"
 
 description "Business App"
-author "Prime"
+author "Jim"
 
 client_script "client.lua"
 server_scripts {
